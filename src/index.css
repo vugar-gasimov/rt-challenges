@@ -1,68 +1,65 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --color-primary: 210deg 40% 98%;
+    --color-secondary: 217deg 32.6% 17.5%;
+    --color-accent1: 288deg 95.8% 90.6%;
+    --color-accent2: 168deg 83.8% 78.2%;
+    /* ... */
   }
-  a:hover {
-    color: #747bff;
+  @media (prefers-color-schema: dark) {
+    :root {
+      --color-primary: 217deg 32.6% 17.5%;
+      --color-secondary: 210deg 40% 98%;
+      --color-accent1: 288deg 95.8% 60.6%;
+      --color-accent2: 168deg 83.8% 78.2%;
+      /* ... */
+    }
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    padding: 10px;
   }
+  body {
+    font-size: 14px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  body {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 30px;
+  }
+  body {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+}
+
+.btn {
+  @apply rounded-full py-2 px-3 uppercase font-bold cursor-pointer tracking-wider;
 }
