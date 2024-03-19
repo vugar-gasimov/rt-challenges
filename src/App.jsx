@@ -3,6 +3,7 @@ import { Suspense } from 'react';
 import Layout from './components/Layout';
 import ShowHide from './pages/ShowHide';
 import Home from './pages/Home';
+import StopWatch from './pages/StopWatch';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       >
         <Route index element={<Home />} />
         <Route path='/showhide' element={<ShowHide />} />
+        <Route path='/stopwatch' element={<StopWatch />} />
       </Route>
     </Routes>
   );
