@@ -13,6 +13,9 @@ const Home = () => {
           <Link to='/stopwatch' className='btn'>
             Stop Watch
           </Link>
+          <Link to='/progressbar' className='btn'>
+            Progress Bar
+          </Link>
         </li>
       </ul>
     </main>

@@ -1,7 +1,14 @@
 import { useState } from 'react';
+import { FaArrowLeft } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const StopWatch = () => {
   const [timer, setTimer] = useState(0);
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
 
   const startTimer = () => {
     window.myTimer = setInterval(() => {
@@ -33,6 +40,10 @@ const StopWatch = () => {
 
   return (
     <main className='container'>
+      <button onClick={goBack} className='btn'>
+        <FaArrowLeft />
+        Go Back
+      </button>
       <h1>Timer</h1>
       {formatTime(timer)}
       <div>

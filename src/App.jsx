@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import ShowHide from './pages/ShowHide';
 import Home from './pages/Home';
 import StopWatch from './pages/StopWatch';
+import ProgressBar from './pages/ProgressBar';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path='/showhide' element={<ShowHide />} />
         <Route path='/stopwatch' element={<StopWatch />} />
+        <Route path='/progressbar' element={<ProgressBar />} />
       </Route>
     </Routes>
   );
