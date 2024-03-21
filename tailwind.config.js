@@ -4,6 +4,11 @@ export default {
   darkMode: 'class',
   theme: {
     colors: {
+      'custom-gradient': {
+        'start': '#ff7eb9',
+        'middle': '#86a8e7',
+        'end': '#5ffbf1',
+      },
       accent: {
         1: 'hsl(var(--color-accent1) / <alpha-value>)',
         2: 'hsl(var(--color-accent2) / <alpha-value>)',

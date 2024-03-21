@@ -12,7 +12,7 @@ const ProgressBar = () => {
     navigate(-1);
   };
   return (
-    <main className='container'>
+    <main className='container min-h-screen'>
       {' '}
       <button onClick={goBack} className='btn'>
         <FaArrowLeft />

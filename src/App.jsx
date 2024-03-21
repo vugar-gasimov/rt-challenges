@@ -5,6 +5,7 @@ import ShowHide from './pages/ShowHide';
 import Home from './pages/Home';
 import StopWatch from './pages/StopWatch';
 import ProgressBar from './pages/ProgressBar';
+import BrowserTree from './pages/BrowserTree';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/showhide' element={<ShowHide />} />
         <Route path='/stopwatch' element={<StopWatch />} />
         <Route path='/progressbar' element={<ProgressBar />} />
+        <Route path='/browsertree' element={<BrowserTree />} />
       </Route>
     </Routes>
   );

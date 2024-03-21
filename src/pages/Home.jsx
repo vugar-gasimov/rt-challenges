@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <main className='container'>
+    <main className='container min-h-screen'>
       <h1>Welcome to the home page!</h1>
       <h2>These are links to other challenge pages:</h2>
       <ul>
@@ -15,6 +15,9 @@ const Home = () => {
           </Link>
           <Link to='/progressbar' className='btn'>
             Progress Bar
+          </Link>
+          <Link to='/browsertree' className='btn'>
+            Browser Tree
           </Link>
         </li>
       </ul>
