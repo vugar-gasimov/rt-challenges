@@ -22,6 +22,9 @@ const Home = () => {
           <Link to='/guessthecolor' className='btn'>
             Erraten Sie die Farbe
           </Link>
+          <Link to='/activecontent' className='btn'>
+            Aktiver Inhalt
+          </Link>
         </li>
       </ul>
     </main>
