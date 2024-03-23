@@ -19,6 +19,9 @@ const Home = () => {
           <Link to='/browsertree' className='btn'>
             Browser Tree
           </Link>
+          <Link to='/guessthecolor' className='btn'>
+            Erraten Sie die Farbe
+          </Link>
         </li>
       </ul>
     </main>

@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import StopWatch from './pages/StopWatch';
 import ProgressBar from './pages/ProgressBar';
 import BrowserTree from './pages/BrowserTree';
+import GuessTheColor from './pages/GuessTheColor';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/stopwatch' element={<StopWatch />} />
         <Route path='/progressbar' element={<ProgressBar />} />
         <Route path='/browsertree' element={<BrowserTree />} />
+        <Route path='/guessthecolor' element={<GuessTheColor />} />
       </Route>
     </Routes>
   );

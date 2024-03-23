@@ -15,6 +15,11 @@ export default {
       },
       primary: 'hsl(var(--color-primary) / <alpha-value>)',
       secondary: 'hsl(var(--color-secondary) / <alpha-value>)',
+
+      'custom-red': '#FF0000',
+      'custom-blue': '#0000FF',
+      'custom-lightblue': '##ADD8E6',
+      'custom-green': '#00FF00',
     },
     extend: {},
   },
