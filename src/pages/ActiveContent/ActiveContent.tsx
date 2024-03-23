@@ -37,7 +37,7 @@ const ActiveContent = () => {
   };
 
   return (
-    <div className='container'>
+    <main className='container min-h-screen'>
       <button onClick={goBack} className='btn text-secondary'>
         <FaArrowLeft />
         Geh zurück
@@ -52,7 +52,7 @@ const ActiveContent = () => {
         </div>
       </header>
 
-      <div id='tabs'>
+      <div id='tabs' className=' text-custom-gradient-end'>
         <menu>
           <button
             className={activeContentIndex === 0 ? 'active' : ''}
@@ -87,7 +87,7 @@ const ActiveContent = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 
